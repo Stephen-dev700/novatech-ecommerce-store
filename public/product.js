@@ -1,0 +1,147 @@
+//products.js//
+  const defaultProducts = [
+    {
+      id: 1,
+      featured: true,
+      name: "Wireless Headphones",
+      category: "Audio",
+      price: 120,
+      stock: 10,
+      rating: 4.8,
+      reviews: 142,
+      image: "images/headphones.jpg",
+      description: "High-quality wireless headphones with noise cancellation and up to 30 hours of battery life."
+    },
+    {
+      id: 2,
+      featured: true,
+      name: "Gaming Mouse",
+      category: "Accessories",
+      price: 80,
+      stock: 15,
+      rating: 4.8,
+      reviews: 142,
+      image: "images/mouse.jpg",
+      description: "Precision gaming mouse with customizable RGB lighting and programmable buttons."
+    },
+    {
+      id: 3,
+      name: "Smart Watch",
+      featured: true,
+      category: "Tech",
+      price: 200,
+      stock: 8,
+      rating: 4.8,
+      reviews: 142,
+      image: "images/watch.jpg",
+      description: "Feature-packed smartwatch with fitness tracking, notifications, and heart-rate monitoring."
+    },
+    {
+      id: 4,
+      featured: true,
+      name: "Bluetooth Speaker",
+      category: "Audio",
+      price: 95,
+      stock: 12,
+      rating: 4.8,
+      reviews: 142,
+      image: "images/speaker.jpg",
+      description: "Portable Bluetooth speaker with deep bass, clear sound, and water-resistant design."
+    },
+    {
+      id: 5,
+      featured: true,
+      name: "Mechanical Keyboard",
+      category: "Accessories",
+      price: 150,
+      stock: 7,
+      rating: 4.8,
+      reviews: 142,
+      image: "images/keyboard.jpg",
+      description: "Mechanical keyboard with tactile switches, RGB backlighting, and durable construction."
+    },
+    {
+      id: 6,
+      featured: true,
+      name: "Webcam HD Pro",
+      category: "Tech",
+      price: 110,
+      stock: 9,
+      rating: 4.8,
+      reviews: 142,
+      image: "images/webcam.jpg",
+      description: "1080p HD webcam with built-in microphone, perfect for meetings and live streaming."
+    },
+    {
+        id: 7,
+        featured: true,
+        name: "USB-C Docking Station",
+        category: "Accessories",
+        price: 140,
+        stock: 6,
+        rating: 4.8,
+        reviews: 142,
+        image: "images/dock.jpg",
+        description: "Expand your laptop with multiple USB, HDMI, and Ethernet ports."
+      },
+      {
+        id: 8,
+        featured: true,
+        name: "Portable SSD 1TB",
+        category: "Tech",
+        price: 180,
+        stock: 11,
+        rating: 4.8,
+        reviews: 142,
+        image: "images/ssd.jpg",
+        description: "High-speed portable SSD with 1TB storage capacity and USB-C connectivity."
+      },
+      {
+        id: 9,
+        featured: true,
+        name: "Wireless Earbuds Pro",
+        category: "Audio",
+        price: 130,
+        stock: 14,
+        rating: 4.9,
+        reviews: 187,
+        image: "images/earbuds.jpg",
+        description: "Premium wireless earbuds with active noise cancellation, crystal-clear calls, and up to 36 hours of battery life."
+      },
+      {
+        id: 10,
+        featured:true,
+        name: "4K Monitor 27-inch",
+        category: "Tech",
+        price: 320,
+        stock: 5,
+        rating: 4.7,
+        reviews: 96,
+        image: "images/monitor.jpg",
+        description: "Ultra HD 27-inch monitor with vibrant colors, slim bezels, and eye-care technology for work and gaming."
+      },
+      {
+        id: 11,
+        featured: true,
+        name: "Laptop Stand",
+        category: "Accessories",
+        price: 45,
+        stock: 20,
+        rating: 4.6,
+        reviews: 211,
+        image: "images/laptop-stand.jpg",
+        description: "Ergonomic aluminum laptop stand designed to improve posture and enhance workspace organization."
+      },
+      {
+        id: 12,
+        featured: true,
+        name: "Power Bank 20000mAh",
+        category: "Tech",
+        price: 75,
+        stock: 18,
+        rating: 4.8,
+        reviews: 163,
+        image: "images/powerbank.jpg",
+        description: "High-capacity portable charger with fast charging support and multiple device connectivity."
+      }
+  ];
