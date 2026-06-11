@@ -61,3 +61,35 @@ This project helped me understand:
 ---
 
 ## 📂 Project Structure
+NovaTech/
+│
+├── index.html
+├── style.css
+├── script.js
+├── product.js
+├── images/
+└── README.md
+
+
+---
+
+## 🚀 Future Improvements
+
+- Add backend (Node.js / Express)
+- Add authentication system
+- Integrate payment gateway
+- Convert to React version
+- Add admin dashboard
+
+---
+
+## 👨‍💻 Author
+
+**Stephen Ilesanmi**  
+Web Developer | UI/UX Enthusiast | Builder of Practical Web Apps
+
+---
+
+## ⭐ If you like this project
+
+Feel free to star the repo ⭐ and follow my journey in web development.
