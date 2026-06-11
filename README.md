@@ -6,7 +6,7 @@ Designed to simulate a real-world shopping experience with cart, wishlist, filte
 ---
 
 ## 🔴 Live Demo
-👉 https://YOUR-LIVE-LINK-HERE
+👉https://stephen-dev700.github.io/novatech-ecommerce-store/
 
 ---
 
