@@ -3,7 +3,6 @@
    category: "all",
    sort: "default"
    };
-   },
  //STATE//
 const Store = {
   state: {
