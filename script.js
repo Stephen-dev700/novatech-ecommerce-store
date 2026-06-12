@@ -90,7 +90,7 @@ const Store = {
   },
 
   addToCart(id) {
-  const product =  getProduct(id);
+  const product =  this.getProduct(id);
   if (!product) return;
   const item = this.state.cart.find(p => p.id === id);
   if (getRemainingStock(id) <= 0) {
