@@ -1,4 +1,10 @@
-  //STATE//
+ const DEFAULT_FILTERS = {
+   search: "",
+   category: "all",
+   sort: "default"
+   };
+   },
+ //STATE//
 const Store = {
   state: {
   filters: {
@@ -38,19 +44,14 @@ const Store = {
   }
   },
  loadFilters() {
- try {
- return (
- JSON.parse(localStorage.getItem("filters")) || { ...DEFAULT_FILTERS });
- } catch {
- return { ...DEFAULT_FILTERS };
- }
-  const DEFAULT_FILTERS = {
-  search: "",
-  category: "all",
-  sort: "default"
-  };
-  },
-
+   try {
+     return JSON.parse(
+       localStorage.getItem("filters")
+     ) || DEFAULT_FILTERS;
+   } catch {
+     return DEFAULT_FILTERS;
+   }
+ },
   // Savers
   saveCart() {
   localStorage.setItem("cart", JSON.stringify(this.state.cart) );
