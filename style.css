@@ -8,7 +8,7 @@ html{
 }
 body {
   font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  background: #f4f4f4;]
   color: #222;
   margin: 0;
 }
@@ -37,16 +37,6 @@ button:hover {
   visibility: visible;
 }
 
-.menu-toggle {
-  background: black;
-  color: white;
-  border: none;
-  padding: 0.7rem 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 1.2rem;
-  display: none;
-}
 .logo {
   font-size:  1.8rem;
   font-weight: bold;
@@ -138,12 +128,14 @@ button:hover {
 .filter-modal h3 {
   text-align: center;
 }
+
 .main-layout {
   display: flex;
   gap: 1.5rem;
   padding: 1.5rem;
   align-items: flex-start;
 }
+
 .hero {
   min-height: 80vh;
   background:
@@ -649,10 +641,6 @@ button:hover {
     position:relative;
 }
 
-#wishlistCount{
-    position:relative;
-}
-
 #wishlistCount span{
     position:absolute;
     top:-8px;
@@ -1043,19 +1031,18 @@ transform:scale(1);
 }
 
 @media (max-width: 768px) {
-
   /* Layout */
   .main-layout {
     flex-direction: column;
   }
 
   /* Navbar */
-  .navbar {
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-  }
-
+   .navbar {
+      flex-direction: column;
+      align-items: stretch;
+      padding: 10px 15px;
+      gap: 10px;
+    }
   .navbar > div {
     width: 100%;
     display: flex;
@@ -1063,6 +1050,9 @@ transform:scale(1);
   }
 
   /* Search */
+   .search-box {
+      width: 100%;
+    }
   .search-box input {
     width: 100%;
     max-width: 450px;
@@ -1072,11 +1062,9 @@ transform:scale(1);
   .hero {
     min-height: 60vh;
   }
-
   .hero-content h1 {
     font-size: 2.2rem;
   }
-
   .hero-content p {
     font-size: 1rem;
   }
@@ -1084,11 +1072,43 @@ transform:scale(1);
   /* Cart */
   .cart-panel {
     width: 100%;
+    right: -100%;
     max-width: 320px;
   }
+  .cart-panel.open {
+      right: 0;
+    }
+  .cart-actions {
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .cart-actions button {
+      padding: 10px 12px;
+    }
 
   /* Add product */
   .add-product {
     width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .product-card {
+    padding: 12px;
+  }
+  .product-card {
+    transition: transform 0.2s ease;
+  }
+
+  .product-card:active {
+    transform: scale(0.98);
+  }
+
+  button {
+    min-height: 44px;
   }
 }
